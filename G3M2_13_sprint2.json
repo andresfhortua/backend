@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "a35092fd-7175-4a59-93e1-300f7ae66a18",
+		"name": "G3M2_13_sprint2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "obtener_docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://g3m213sprint2.herokuapp.com/documentos/",
+					"protocol": "https",
+					"host": [
+						"g3m213sprint2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"documentos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear_doc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_documento\":6,\r\n    \"nombre\": \"citacion_2\",\r\n    \"id_dependencia\": 1,\r\n    \"prioridad\":1,\r\n    \"fecha_venc\":\"20-12-2020\"\r\n}"
+				},
+				"url": {
+					"raw": "https://g3m213sprint2.herokuapp.com/documentos/nuevo/",
+					"protocol": "https",
+					"host": [
+						"g3m213sprint2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"documentos",
+						"nuevo",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
