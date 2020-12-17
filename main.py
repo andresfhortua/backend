@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
- "https://frontendsprint3.herokuapp.com/#/"
+ "https://frontendsprint3.herokuapp.com"
 ]
 app.add_middleware(
 CORSMiddleware, 
